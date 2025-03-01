@@ -27,7 +27,12 @@ setup(
     long_description_content_type="text/markdown",
     packages=find_packages(),
     package_data={
-        "multivisor.server": ["dist/*", "dist/static/css/*", "dist/static/js/*"]
+        "multivisor.server": [
+            "dist/*",
+            "dist/static/css/*",
+            "dist/static/js/*",
+            "dist/static/favicon.ico",  # Ensure favicon is included
+        ]
     },
     entry_points=dict(
         console_scripts=[
